@@ -1,0 +1,131 @@
+html,
+body {
+    background-color: #efeff4;
+}
+
+.mui-bar .mui-pull-left .mui-icon {
+    padding-right: 5px;
+    font-size: 28px;
+}
+
+#header .mui-icon-search {
+    float: right;
+    /* margin-top: 3%; */
+    margin-right: -4%;
+}
+
+#header .mui-bar .mui-title {
+    overflow: visible;
+}
+
+#header a {
+    color: #000000;
+}
+.mui-tab-item .mui-tab-label {
+    display: block;
+    font-size: 11px;
+}
+.mui-bar .mui-icon-extra {
+    margin-top: 4px;
+}
+
+
+
+
+/* 第一页 */
+
+/* 轮播图 */
+#slider .mui-slider-indicator {
+    bottom: 6%;
+}
+
+/* 导航 */
+.mui-bar  .mui-item {
+    line-height: 12px;
+}
+.tabbar_nav  {
+    overflow: hidden;
+    width: 108% ;
+    margin: 0.01% -9%;
+
+}
+.tabbar_nav li {
+    width: 33.33333%;
+    float: left;
+    overflow: hidden;
+}
+.tabbar_nav li  a {
+    float: left;
+    width: 100%;
+}
+.tabbar_nav li  a img {
+    width: 100%;
+}
+
+.mui-bar-tab .mui-item {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #929292;
+  
+}
+.mui-bar-tab .mui-item .mui-tab-label {
+    display: block;
+    font-size: 12px;
+}
+.mui-bar-tab  .mui-icon {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.mui-bar-tab .mui-bar .mui-icon {
+    font-size: 16px;
+   
+}
+.mui-bar-tab .mui-active {
+    color: orange;
+}
+
+
+/* active */
+
+
+.tabbar_active {
+    overflow: hidden;
+    width: 108% ;
+    margin: 0.01% -9%;
+    position: relative;
+    margin-top: 0.5%;
+}
+.tabbar_active li {
+    width: 33.33333%;
+    float: left;
+    overflow: hidden;
+}
+.tabbar_active li  a {
+    float: left;
+    width: 100%;
+}
+.tabbar_active_box {
+    width: 60.6666%;
+    position: absolute;
+    bottom: 1%;
+
+}
+.tabbar_active li  a img {
+    width: 100%;
+}
+.tabbar_active_box  li {
+    width: 50%;
+
+}
+
+/* 滚动实现 */
+
+.mui-control-content {
+    margin-top: 45px;
+}

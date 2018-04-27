@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/icons-extra.css">
+    <link rel="stylesheet" href="./fontAwesome/css/font-awesome.css">
+    <script src="./js/swipe.js"></script>
+    <script src="./js/mui.min.js"></script>
+    <script src="./js/jquery-1.12.1.min.js"></script>
+    <script src="./js/template-native.js"></script>
+</head>
+    <!-- 待处理bug:有没有内容点击搜索后都会跳转到商品详情页：解决方案：在跳转前先获取input内容并且进行判断，有内容再进行跳转 -->
+<body>
+    <!-- 顶部 -->
+    <header id="header" class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-back " onClick="javascript :history.back(-1);"></a>
+        <h1 class="mui-title">搜索中心</h1>
+
+    </header>
+    <div class="content">
+        <div class="search_content">
+            <input type="text" placeholder="请输入搜索内容">
+            <button class="btn">搜索</button>
+        </div>
+        <div class="del">
+            <div>
+                <span>搜索历史</span>
+                <span class="fa fa-trash delAll">清空记录</span>
+            </div>
+        </div>
+        <ul class="content_list">
+          
+            <li>
+                <span>nike</span>
+                <a href="javascript:;" class="fa fa-times"></a>
+            </li>
+          
+
+           
+        </ul>
+    </div>
+
+
+
+
+
+    <!-- 底部导航 -->
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-item mui-active " href="./index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-item" href="./cate.html">
+            <span class="mui-icon mui-icon-bars">
+
+            </span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-item" href="#tabbar-with-contact">
+            <span class="mui-icon-extra mui-icon-extra-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-person-filled"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+    <div class="mui-content">
+
+        <script type="text/template" id="search_tpl">
+            <% for (var i=0;i<json.length;i++){ %>
+                    <li><span><%= json[i] %></span><a href="javascript:;" class="fa fa-times" data-name="<%= json[i] %>"></a></li>
+            <% } %>
+            
+        </script>
+        <script type="text/template" id="search_tpl1">
+            <% for (var i=0;i<json1.length;i++){ %>
+                    <li><span><%= json1[i] %></span><a href="javascript:;" class="fa fa-times" data-name="<%= json1[i] %>"></a></li>
+            <% } %>
+            
+        </script>
+        <script type="text/template" id="search_tpl2">
+            <% for (var i=0;i<json2.length;i++){ %>
+                    <li><span><%= json2[i] %></span><a href="javascript:;" class="fa fa-times" data-name="<%= json2[i] %>"></a></li>
+            <% } %>
+            
+        </script>
+       
+        <script src="./js/search.js"></script>
+
+
+</body>
+
+</html>

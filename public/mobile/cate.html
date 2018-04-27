@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=2y, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cate.css">
+    <link rel="stylesheet" href="./css/icons-extra.css">
+    <title>Document</title>
+    <script src="./js/swipe.js"></script>
+    <script src="./js/mui.min.js"></script>
+    <script src="./js/jquery-1.12.1.min.js"></script>
+    <script src="./js/template-native.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header" class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-back " onClick="javascript :history.back(-1);"></a>
+        <h1 class="mui-title">乐淘云购</h1>
+        <a class="mui-icon mui-icon-search"></a>
+    </header>
+<!-- 内容 -->
+    <div class="content">
+        <!-- 左边栏 -->
+            <div class="content_aside">
+                <ul class="content_aside_ul">
+                    <li class="content_aside_active">朱豪亮</li>
+                    <!-- <li>朱豪亮</li>
+                    <li>朱豪亮</li> -->
+                </ul>
+            </div>
+            <!-- 右侧内容区 -->
+            <div class="content_right">
+                    <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <!--这里放置真实显示的DOM内容-->
+                                <ul>
+                                        <!-- <li><span><img src="./images/brand1.png"></span><p>NIKE</p></li>
+                                        <li><span><img src="./images/brand2.png"></span><p>NIKE</p></li>
+                                        <li><span><img src="./images/brand3.png"></span><p>NIKE</p></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                
+            </div> 
+    </div>
+    
+
+<!-- 底部 -->
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-item mui-active " href="./index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-item" href="#tabbar-with-chat">
+            <span class="mui-icon mui-icon-bars">
+
+            </span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-item" href="#tabbar-with-contact">
+            <span class="mui-icon-extra mui-icon-extra-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-person-filled"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+    <div class="mui-content">
+    <script type="text/template" id="cate_top1">
+        <% for(var i=0;i<rows.length;i++){ %>
+            <li data-id="<%=rows[i].id%>"><%=rows[i].categoryName%></li>
+        <%}%>
+    </script>
+    <!-- 二级列表模板 -->
+    <script type="text/template" id="cate_top2">
+        <% for(var i=0;i<rows.length;i++){ %>
+            <li><span><img src="<%=rows[i].brandLogo%>"></span><p><%=rows[i].brandName%></p></li>
+        <%}%>
+    </script>
+    <script src="./js/cate.js"></script> 
+</body>
+</html>

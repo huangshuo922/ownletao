@@ -1,0 +1,168 @@
+html,
+body {
+    background-color: #efeff4;
+    width: 100%;
+    height: 100%;
+}
+
+.mui-bar .mui-pull-left .mui-icon {
+    padding-right: 5px;
+    font-size: 28px;
+}
+
+#header .mui-icon-search {
+    float: right;
+    /* margin-top: 3%; */
+    margin-right: -4%;
+}
+
+#header .mui-bar .mui-title {
+    overflow: visible;
+}
+
+#header a {
+    color: #000000;
+}
+.mui-tab-item .mui-tab-label {
+    display: block;
+    font-size: 11px;
+}
+.mui-bar .mui-icon-extra {
+    margin-top: 4px;
+}
+
+
+
+
+/* 导航 */
+
+.mui-bar  .mui-item {
+    line-height: 12px;
+}
+.tabbar_nav  {
+    overflow: hidden;
+    width: 108% ;
+    margin: 0.01% -9%;
+
+}
+.tabbar_nav li {
+    width: 33.33333%;
+    float: left;
+    overflow: hidden;
+}
+.tabbar_nav li  a {
+    float: left;
+    width: 100%;
+}
+.tabbar_nav li  a img {
+    width: 100%;
+}
+
+.mui-bar-tab .mui-item {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #929292;
+  
+}
+.mui-bar-tab .mui-item .mui-tab-label {
+    display: block;
+    font-size: 12px;
+}
+.mui-bar-tab  .mui-icon {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.mui-bar-tab .mui-bar .mui-icon {
+    font-size: 16px;
+   
+}
+.mui-bar-tab .mui-active {
+    color: orange;
+}
+
+
+/* 主题内容 */
+.content {
+    padding-top: 44px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    overflow: hidden;
+  
+}
+/* 左侧 */
+
+
+.content_aside {
+    width: 80px;
+    height: 100%;
+    /* position: absolute; */
+    float: left;
+   
+    background-color: #f7f7f7;
+}
+
+.content_aside ul {
+    width: 100%;
+    height: 100%;
+    
+}
+.content_aside ul li {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.content_right {
+    position: relative;
+    
+    
+    display: flex;
+    flex: 1;
+    background-color: #efeff4;
+    height: 100%;
+}
+.content_aside_active {
+    background-color:#efeff4;
+}
+
+
+/* 右侧 */
+.content_right ul {
+    min-height: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    font-size: 0;
+    overflow: hidden;
+}
+.content_right ul li{
+    padding: 0 5px;
+    float: left;
+    width: 33.3333%;
+    height: 70px;
+    overflow: hidden;
+}
+.content_right span{
+    width: 100%;
+    height: 80%;
+}
+.content_right   span img {
+    width: 100%;
+}
+.content_right p {
+    height: 20%;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    float: left;
+    line-height: 20px;
+}

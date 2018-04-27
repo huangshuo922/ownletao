@@ -1,0 +1,196 @@
+html,
+body {
+    background-color: #efeff4;
+    width: 100%;
+    height: 100%;
+}
+
+.mui-bar .mui-pull-left .mui-icon {
+    padding-right: 5px;
+    font-size: 28px;
+}
+
+#header .mui-icon-search {
+    float: right;
+    /* margin-top: 3%; */
+    margin-right: -4%;
+}
+
+#header .mui-bar .mui-title {
+    overflow: visible;
+}
+
+#header a {
+    color: #000000;
+}
+.mui-tab-item .mui-tab-label {
+    display: block;
+    font-size: 11px;
+}
+.mui-bar .mui-icon-extra {
+    margin-top: 4px;
+}
+
+
+
+/* 导航 */
+
+.mui-bar  .mui-item {
+    line-height: 12px;
+}
+.tabbar_nav  {
+    overflow: hidden;
+    width: 108% ;
+    margin: 0.01% -9%;
+
+}
+.tabbar_nav li {
+    width: 33.33333%;
+    float: left;
+    overflow: hidden;
+}
+.tabbar_nav li  a {
+    float: left;
+    width: 100%;
+}
+.tabbar_nav li  a img {
+    width: 100%;
+}
+
+.mui-bar-tab .mui-item {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #929292;
+  
+}
+.mui-bar-tab .mui-item .mui-tab-label {
+    display: block;
+    font-size: 12px;
+}
+.mui-bar-tab  .mui-icon {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.mui-bar-tab .mui-bar .mui-icon {
+    font-size: 16px;
+   
+}
+.mui-bar-tab .mui-active {
+    color: orange;
+}
+
+
+
+
+
+/* 搜索框 */
+.content {
+    padding-right: 10px;
+    padding-top: 44px;
+    
+    padding-left: 10px;
+}
+.search_content {
+    margin-top: 20px;
+    position: relative;
+ 
+    padding-right: 55px;
+}
+.search_content input {
+    width: 100%;
+    height: 30px;
+   
+}
+.search_content button {
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    height: 30px;
+
+}
+
+
+/* 搜索导航开始 */
+
+.search_nav {
+    width: 100%;
+    height: 35px;
+    background-color: #f7f7f7;
+    padding: 0 10px;
+    font-size: 0;
+}
+.search_nav li{
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    height: 100%;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 35px;
+}
+
+
+/* 列表主体开始 */
+.list_content {
+    width: 100%;
+    /* padding: 0 5px; */
+    overflow: hidden;
+}
+.list_content li {
+    width: 50%;
+    padding: 10px 5px;
+    background-color: #efeff4;
+    float: left;
+    /* text-align: center; */
+}
+.list_content li a {
+    display: block;
+    width: 100%;
+}
+.list_content li a img {
+    width: 100%;
+}
+.list_content li p {
+    line-height: 14px;
+    padding: 0 5px;
+     display: -webkit-box; 
+    display: -moz-box;  
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp:2
+
+}
+.price {
+    text-align: center;
+    margin: 10px 0;
+}
+.price span {
+    padding: 0 4px;
+}
+.price del {
+    padding: 0 4px;
+}
+
+.list_content .buy a {
+    display: block;
+    width: 75px;
+    height: 22px;
+    background-color: pink;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 4px;
+}

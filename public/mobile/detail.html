@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/icons-extra.css">
+    <link rel="stylesheet" href="./fontAwesome/css/font-awesome.css">
+    <script src="./js/swipe.js"></script>
+    <script src="./js/mui.min.js"></script>
+    <script src="./js/jquery-1.12.1.min.js"></script>
+    <script src="./js/template-native.js"></script>
+</head>
+
+<body>
+    <!-- 页面需求分析：
+    1通过搜索页面发来的ID 发送ajax请求动态显示页面内容
+    2点击加入购物车按钮 获取页面中商品尺码、商品ID、商品数量，并且进行页面跳转，跳转到购物车页面。  -->
+
+    <!-- 顶部导航开始 -->
+    <header id="header" class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-back "></a>
+        <h1 class="mui-title">商品详情</h1>
+        <a class="fa fa-home"></a>
+    </header>
+    <!-- 内容主体开始 -->
+    <div class="content">
+        <!-- 轮播图开始 -->
+        <div class="banner">
+            <div class="mui-slider">
+                <div class="mui-slider-group mui-slider-loop">
+                    <!--支持循环，需要重复图片节点-->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="images/banner4.png" />
+                        </a>
+                    </div>
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="images/banner1.png" />
+                        </a>
+                    </div>
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="images/banner2.png" />
+                        </a>
+                    </div>
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="images/banner3.png" />
+                        </a>
+                    </div>
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="images/banner4.png" />
+                        </a>
+                    </div>
+                    <!--支持循环，需要重复图片节点-->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="images/banner1.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="mui-slider-indicator">
+                    <div class="mui-indicator mui-active"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品详情介绍 -->
+        <div class="intro">
+            这是一段很长的商品介绍 这是一段很长的商品介绍 这是一段很长的商品介绍
+
+        </div>
+        <!-- 商品价格 -->
+        <div class="price">
+            <span>价格：</span>
+            <span>&yen;499.1</span>
+            <del>&yen;888.1</del>
+        </div>
+        <!-- 商品尺码 -->
+        <div class="size">
+            <span>尺码：</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+            <span>41</span>
+        </div>
+        <!-- 购买数量 -->
+        <div class="buyNum">
+            <span>数量：</span>
+            <div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+                <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                <input class="mui-numbox-input" type="number" />
+                <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+            </div>
+            <span>剩余：
+                <i>20</i>件</span>
+        </div>
+
+    </div>
+
+    <!-- 底部购物车栏开始 -->
+    <div class="footer">
+        <a href="javascript:;" class="fa fa-cart-arrow-down"></a>
+        <span class="add">
+            <a href="javascript:;">加入购物车</a>
+        </span>
+        <span class="buy">
+            <a href="javascript:;">立即购买</a>
+        </span>
+    </div>
+    <!-- 模板引擎渲染页面 -->
+    <script type="text/template" id="detail-tpl1">
+        
+            <!-- 轮播图开始 -->
+            <div class="banner">
+                <div class="mui-slider">
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!--支持循环，需要重复图片节点-->
+                       
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <!-- 变量 -->
+                                <img src="<%=pic[pic.length-1].picAddr%>"/>
+                            </a>
+                        </div>
+                        <!-- 需要循环创建区域 -->
+                        <%for(var i=0;i<pic.length;i++){%>
+                                <div class="mui-slider-item">
+                                        <a href="#">
+                                            <img src="<%=pic[i].picAddr%>" />
+                                        </a>
+                                </div>
+                        <%}%>
+                        <!--支持循环，需要重复图片节点-->
+                        <!-- 变量 -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="<%=pic[0].picAddr%>"/>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- 循环创建圆点 -->
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        <%for(var i=0;i<pic.length-1;i++){%>
+                                <div class="mui-indicator"></div>
+                        <%}%>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- 商品详情介绍 -->
+            <div class="intro">
+
+                <%=proName%>
+    
+            </div>
+            <!-- 商品价格 -->
+            <div class="price">
+                <span>价格：</span>
+                <span>&yen;<%=price%></span>
+                <del>&yen;<%=oldPrice%></del>
+            </div>
+            <!-- 商品尺码 -->
+            <div class="size">
+                <span>尺码：</span>
+                <%for(var i=newSizeArr[0];i<=newSizeArr[1];i++){%>
+                    <span><%=i%></span>
+
+               <%}%>
+                
+                
+            </div>
+            <!-- 购买数量 -->
+            <div class="buyNum">
+                <span>数量：</span>
+                <!-- 注意：最大数量应该与库存一致 -->
+                <div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+                    <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                    <input class="mui-numbox-input" type="number" />
+                    <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+                </div>
+                <span>剩余：<i><%=num%></i>件</span>
+            </div>
+    
+       
+    </script>
+
+    <script src="./js/detail.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+html,
+body {
+    background-color: #efeff4;
+    width: 100%;
+    height: 100%;
+}
+
+.mui-bar .mui-pull-left .mui-icon {
+    padding-right: 5px;
+    font-size: 28px;
+}
+
+#header .mui-icon-search {
+    float: right;
+    /* margin-top: 3%; */
+    margin-right: -4%;
+}
+
+#header .mui-bar .mui-title {
+    overflow: visible;
+}
+
+#header a {
+    color: #000000;
+}
+.mui-tab-item .mui-tab-label {
+    display: block;
+    font-size: 11px;
+}
+.mui-bar .mui-icon-extra {
+    margin-top: 4px;
+}
+
+
+
+/* 导航 */
+
+.mui-bar  .mui-item {
+    line-height: 12px;
+}
+.tabbar_nav  {
+    overflow: hidden;
+    width: 108% ;
+    margin: 0.01% -9%;
+
+}
+.tabbar_nav li {
+    width: 33.33333%;
+    float: left;
+    overflow: hidden;
+}
+.tabbar_nav li  a {
+    float: left;
+    width: 100%;
+}
+.tabbar_nav li  a img {
+    width: 100%;
+}
+
+.mui-bar-tab .mui-item {
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #929292;
+  
+}
+.mui-bar-tab .mui-item .mui-tab-label {
+    display: block;
+    font-size: 12px;
+}
+.mui-bar-tab  .mui-icon {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.mui-bar-tab .mui-bar .mui-icon {
+    font-size: 16px;
+   
+}
+.mui-bar-tab .mui-active {
+    color: orange;
+}
+
+
+/* 搜索主体 */
+.content {
+    padding-right: 10px;
+    padding-top: 44px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+}
+.search_content {
+    margin-top: 20px;
+    position: relative;
+ 
+    padding-right: 55px;
+}
+.search_content input {
+    width: 100%;
+    height: 30px;
+   
+}
+.search_content button {
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    height: 30px;
+
+}
+
+.content_list {
+    width: 100%;
+}
+.content_list li {
+    
+    border: 1px solid #7a7979;
+    border-top: 0 solid ;
+    padding-left: 10px;
+    line-height: 30px;
+}
+/* .content_list li:nth-child(1){
+    border: 0;
+    height: 30px;
+    padding-left: 0;
+    /* line-height: 30px; */
+ 
+.content_list li:nth-child(1){
+   
+    border-top: 1px solid #7a7979;
+}
+
+
+.content_list li a {
+    line-height: 30px;
+    float: right;
+    width: 30px;
+    height: 30px;
+    color: black;
+    text-align: center;
+}
+.del div {
+    /* border: 1px solid #7a7979; */
+    /* border-top: 0 solid ; */
+    padding-left: 10px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.del div span:nth-child(1){
+    float: left;
+    height: 100%;
+    line-height: 30px;
+}
+.del div span:nth-child(2){
+    float: right;
+     margin-top: 8px;
+    
+}
